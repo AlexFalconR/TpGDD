@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A07A4359-5DDB-4119-84B2-D71B45190295}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UberFrba</RootNamespace>
+    <AssemblyName>UberFrba</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abm Automovil\BajaAutomovil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Automovil\BajaAutomovil.Designer.cs">
+      <DependentUpon>BajaAutomovil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Automovil\AltaAutomovil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Automovil\AltaAutomovil.Designer.cs">
+      <DependentUpon>AltaAutomovil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Automovil\ModificacionAutomovil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Automovil\ModificacionAutomovil.Designer.cs">
+      <DependentUpon>ModificacionAutomovil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Persona\BajaPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Persona\BajaPersona.Designer.cs">
+      <DependentUpon>BajaPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Persona\SeleccionPersonaActiva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Persona\SeleccionPersonaActiva.Designer.cs">
+      <DependentUpon>SeleccionPersonaActiva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Persona\ModificacionPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Persona\ModificacionPersona.Designer.cs">
+      <DependentUpon>ModificacionPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Persona\SeleccionDePersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Persona\SeleccionDePersona.Designer.cs">
+      <DependentUpon>SeleccionDePersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Rol\AltaRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Rol\AltaRol.Designer.cs">
+      <DependentUpon>AltaRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Rol\BajaRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Rol\BajaRol.Designer.cs">
+      <DependentUpon>BajaRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Rol\ModificacionRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Rol\ModificacionRol.Designer.cs">
+      <DependentUpon>ModificacionRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Turno\AltaTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Turno\AltaTurno.Designer.cs">
+      <DependentUpon>AltaTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Turno\BajaTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Turno\BajaTurno.Designer.cs">
+      <DependentUpon>BajaTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Turno\ModificacionSeleccionTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Turno\ModificacionSeleccionTurno.Designer.cs">
+      <DependentUpon>ModificacionSeleccionTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Turno\ModificacionTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Turno\ModificacionTurno.Designer.cs">
+      <DependentUpon>ModificacionTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm usuario\CambiarPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm usuario\CambiarPassword.Designer.cs">
+      <DependentUpon>CambiarPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaDAO\DAOAutomovil.cs" />
+    <Compile Include="CapaDAO\DAOChofer.cs" />
+    <Compile Include="CapaDAO\DAOCLiente.cs" />
+    <Compile Include="CapaDAO\DAOFacturacion.cs" />
+    <Compile Include="CapaDAO\DAOFuncionalidad.cs" />
+    <Compile Include="CapaDAO\DAOListadoEstadistico.cs" />
+    <Compile Include="CapaDAO\DAOLogin.cs" />
+    <Compile Include="CapaDAO\DAOPersona.cs" />
+    <Compile Include="CapaDAO\DAORegistroViaje.cs" />
+    <Compile Include="CapaDAO\DAORendicionViaje.cs" />
+    <Compile Include="CapaDAO\DAORol.cs" />
+    <Compile Include="CapaDAO\DAOTurno.cs" />
+    <Compile Include="CapaDAO\DAOUsuario.cs" />
+    <Compile Include="CapaDAO\SqlConnector.cs" />
+    <Compile Include="Abm Persona\AltaPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Persona\AltaPersona.Designer.cs">
+      <DependentUpon>AltaPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\Facturar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\Facturar.Designer.cs">
+      <DependentUpon>Facturar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listado Estadistico\ListadoEstadistico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listado Estadistico\ListadoEstadistico.Designer.cs">
+      <DependentUpon>ListadoEstadistico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Funcionalidad.cs" />
+    <Compile Include="Model\Encriptacion.cs" />
+    <Compile Include="Model\Error.cs" />
+    <Compile Include="Model\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\Globals.cs" />
+    <Compile Include="Model\Persona.cs" />
+    <Compile Include="Model\Rol.cs" />
+    <Compile Include="Model\RolUsuario.cs" />
+    <Compile Include="Model\Turno.cs" />
+    <Compile Include="Model\Usuario.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registro Viajes\RegistrarViaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro Viajes\RegistrarViaje.Designer.cs">
+      <DependentUpon>RegistrarViaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rendicion Viajes\RendirViaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rendicion Viajes\RendirViaje.Designer.cs">
+      <DependentUpon>RendirViaje.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Abm Automovil\BajaAutomovil.resx">
+      <DependentUpon>BajaAutomovil.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Automovil\AltaAutomovil.resx">
+      <DependentUpon>AltaAutomovil.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Automovil\ModificacionAutomovil.resx">
+      <DependentUpon>ModificacionAutomovil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Persona\BajaPersona.resx">
+      <DependentUpon>BajaPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Persona\SeleccionPersonaActiva.resx">
+      <DependentUpon>SeleccionPersonaActiva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Persona\ModificacionPersona.resx">
+      <DependentUpon>ModificacionPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Persona\SeleccionDePersona.resx">
+      <DependentUpon>SeleccionDePersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Rol\AltaRol.resx">
+      <DependentUpon>AltaRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Rol\BajaRol.resx">
+      <DependentUpon>BajaRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Rol\ModificacionRol.resx">
+      <DependentUpon>ModificacionRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Turno\AltaTurno.resx">
+      <DependentUpon>AltaTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Turno\BajaTurno.resx">
+      <DependentUpon>BajaTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Turno\ModificacionSeleccionTurno.resx">
+      <DependentUpon>ModificacionSeleccionTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Turno\ModificacionTurno.resx">
+      <DependentUpon>ModificacionTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm usuario\CambiarPassword.resx">
+      <DependentUpon>CambiarPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\Facturar.resx">
+      <DependentUpon>Facturar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listado Estadistico\ListadoEstadistico.resx">
+      <DependentUpon>ListadoEstadistico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Persona\AltaPersona.resx">
+      <DependentUpon>AltaPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registro Viajes\RegistrarViaje.resx">
+      <DependentUpon>RegistrarViaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rendicion Viajes\RendirViaje.resx">
+      <DependentUpon>RendirViaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoPrueba.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoPrueba1.bmp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-1574176_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo azul oscuro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD-Wallpapers-022.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mario.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
